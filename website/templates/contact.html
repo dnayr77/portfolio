@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+  <form action="action_page.php">
+
+    <label for="name">Name</label>
+    <input type="text" id="fname" name="name" placeholder="Your name..">
+
+    <label for="email">Email</label>
+    <input type="text" id="fname" name="name" placeholder="Your email..">
+
+    <label for="inquiry">Inquiry Type</label>
+    <select id="business" name="business">
+      <option value="question">Question</option>
+      <option value="site issue">Site Issue</option>
+      <option value="feedback">Feedback</option>
+      <option value="professional">Professional</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+  <br>
+</div>
+{% endblock content %}

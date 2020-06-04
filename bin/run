@@ -1,0 +1,21 @@
+#!/bin/bash
+#
+# Set Flask Settings, Run Server
+
+
+# Stop on errors, print commands
+# See https://vaneyckt.io/posts/safer_bash_scripts_with_set_euxo_pipefail/
+set -Eeuo pipefail
+set -x
+
+# Set FLASK_DEBUG, FLASK_APP and INSTA485_SETTINGS environment variables
+echo "\n+ export FLASK_DEBUG=True"
+export FLASK_DEBUG=True
+echo "\n+ export FLASK_APP=website"
+export FLASK_APP=website
+echo "\n+ export WEBSITE_SETTINGS=config.py"
+export WEBSITE_SETTINGS=config.py
+
+# Run the development server on port 8000
+echo "\n+ flask run --host 0.0.0.0 --port 8000"
+flask run --host 0.0.0.0 --port 8000
