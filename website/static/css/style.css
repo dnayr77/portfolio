@@ -5,8 +5,40 @@
     height: auto !important; /* real browsers */
     min-height: 100%; /* real browsers */
     margin: auto;
-    position:relative;
+    position: relative;
     background-color: #EBEDEF;
+}
+
+.mobile_container {
+    margin-top: 10px;
+    width: 100%;
+    height: auto !important; /* real browsers */
+    min-height: 100%; /* real browsers */
+    margin: auto;
+    position: relative;
+    background-color: #EBEDEF;
+}
+
+.mobile_picture_holder {
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 90%;
+}
+
+.mobile_bio_container {
+  width: 50%;
+  padding-top: 10px;
+  padding-right: 10px;
+  height: 100%;
+  text-align: left;
+}
+
+.mobile_container {
+  margin-top: 5px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
 }
 
 .profile_pic {
