@@ -16,7 +16,6 @@ def show_index():
 
     title = "Home"
 
-
     return render_template("index.html", title = title)
 
 
