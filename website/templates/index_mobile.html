@@ -1,0 +1,25 @@
+{% extends 'base_mobile.html' %}
+
+{% block content %}
+  <div class="center_text top_20">
+    <h3>Hi, my name is Ryan Dunn and this is my Website</h3>
+  </div>
+  <div class="top_20">
+  <div class="mobile_picture_holder">
+    <img id="img" src={{ url_for('static', filename = 'media/temp-self.jpg') }} alt="Profile_Pic" class="profile_pic">
+  </div>
+  <div class="mobile_bio_container">
+    <ul>
+    <li><h4>Software Developer</h4></li>
+    <p>I recently graduated from the University of Michigan and am looking to put my skills and passion to use.
+     My focus is on Web and Mobile App Development.</p>
+    <li><h4>Lover of all things tech</h4></li>
+    <p>My intense fascination and interest in tech pushed me to become a software developer. In my free time you
+      can find me writing code, building computers, flying homemade quadcopters, and playing video games.</p>
+    <li><h4>World Traveler</h4></li>
+    <p>A master of finding cheap airline tickets so I can experience new cultures and destinations when able.</p>
+    <ul>
+  </div>
+  </div>
+
+{% endblock content %}
