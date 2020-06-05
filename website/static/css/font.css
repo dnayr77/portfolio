@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "DroidSerif";
+  src: url("font/DroidSans.ttf");
+}
+
+
+
+* {
+    font-family: DroidSerif !important;
+}

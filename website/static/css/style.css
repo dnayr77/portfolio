@@ -1,14 +1,3 @@
-.page_container {
-    margin-top: 10px;
-    max-width: 1000px;
-    min-width: 800px;
-    height: auto !important; /* real browsers */
-    min-height: 100%; /* real browsers */
-    margin: auto;
-    position: relative;
-    background-color: #EBEDEF;
-}
-
 .mobile_container {
     margin-top: 10px;
     width: 100%;
@@ -26,9 +15,8 @@
 }
 
 .mobile_bio_container {
-  width: 50%;
-  padding-top: 10px;
-  padding-right: 10px;
+  width: 100%;
+  padding: 10px;
   height: 100%;
   text-align: left;
 }
@@ -39,6 +27,17 @@
   margin-left: auto;
   margin-right: auto;
   padding: 5px;
+}
+
+.page_container {
+  margin-top: 10px;
+  max-width: 1000px;
+  min-width: 800px;
+  height: auto !important; /* real browsers */
+  min-height: 100%; /* real browsers */
+  margin: auto;
+  position: relative;
+  background-color: #EBEDEF;
 }
 
 .profile_pic {
@@ -53,7 +52,7 @@
 .picture_holder {
   padding-left: 10px;
   padding-top: 10px;
-  width: 50%;
+  width: 45%;
   float: left;
 }
 
@@ -88,7 +87,7 @@
 }
 
 .bio_container {
-  width: 50%;
+  width: 55%;
   padding-top: 10px;
   padding-right: 10px;
   height: 100%;
