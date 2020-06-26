@@ -57,7 +57,7 @@ def show_contact():
     if form.validate_on_submit():
         print('it worked')
 
-        flash('<b>name:</b> {}'.format(form.name.data))
+        flash('name: {}'.format(form.name.data))
         flash('email: {}'.format(form.email.data))
         flash('inquiry type: {}'.format(form.inquiry.data))
         flash('message: {}'.format(form.message.data))
