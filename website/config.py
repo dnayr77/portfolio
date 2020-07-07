@@ -13,3 +13,9 @@ UPLOAD_FOLDER = os.path.join(
     'media',
 )
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
+
+MAIL_SERVER = "smtp.gmail.com"
+MAIL_PORT = 465
+MAIL_USE_SSL = True
+MAIL_USERNAME = 'ryandunnportfolio77@gmail.com'
+MAIL_PASSWORD = 'waqMGgw9f4MUsDvR'

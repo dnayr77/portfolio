@@ -6,6 +6,7 @@ import flask
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, SelectField, TextAreaField
 from wtforms.validators import DataRequired
+from flask_mail import Message, Mail
 import arrow
 import website
 
@@ -53,6 +54,7 @@ def show_contact():
     title = "Contact"
     print('stuff')
     form = ContactForm()
+    mail = Mail()
 
     if form.validate_on_submit():
         print('it worked')
@@ -61,6 +63,14 @@ def show_contact():
         flash('email: {}'.format(form.email.data))
         flash('inquiry type: {}'.format(form.inquiry.data))
         flash('message: {}'.format(form.message.data))
+
+        msg = Message(form.inquiry.data, sender='ryandunnportfolio77@gmail.com', recipients=['ryancd77@gmail.com'])
+        msg.body = """
+        From: %s <%s>
+        %s
+        """ % (form.name.data, form.email.data, form.message.data)
+        mail.send(msg)
+
         return redirect('/confirmation')
     else:
         print(form.errors)

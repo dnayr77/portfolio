@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% set active_page = "projects" %}
 {% block content %}
+<div class="education_container">
 <div class="edu_header">
     <div class="umich_symbol">
       <img src={{ url_for('static', filename = 'media/CoE-umich.png') }} alt="Umich Eng" class="umich_symbol">
@@ -11,29 +12,36 @@
   </div>
 </div>
 <div class="edu_container">
-  <p>Technical Coursework</p>
-  <div class="class_list">
-    <ul>
-      <li>EECS 281 (Data Structures/Algorithms)</li>
-      <li>EECS 285 (Java Applications)</li>
-      <li>EECS 270 (Logic Design/Verilog)</li>
-      <li>EECS 370 (Computer Organization)</li>
-      <li>EECS 376 (Foundations of Computer Science)</li>
-    </ul>
+  <div class="edu_content">
+    <strong>Technical Coursework</strong>
+    <div class="edu_container">
+    <div class="class_list">
+      <ul>
+        <li>EECS 281 (Data Structures/Algorithms)</li>
+        <li>EECS 285 (Java Applications)</li>
+        <li>EECS 270 (Logic Design/Verilog)</li>
+        <li>EECS 370 (Computer Organization)</li>
+        <li>EECS 376 (Foundations of Computer Science)</li>
+      </ul>
+    </div>
+    <div class="class_list">
+      <ul>
+        <li>EECS 441 (Mobile App Development)</li>
+        <li>EECS 484 (Database Management Systems)</li>
+        <li>EECS 485 (Web Systems)</li>
+        <li>EECS 490 (Computer Languages)</li>
+        <li>EECS 493 (User Interface Development)</li>
+      </ul>
+    </div>
+    </div>
   </div>
-  <div class="class_list">
-    <ul>
-      <li>EECS 441 (Mobile App Development)</li>
-      <li>EECS 484 (Database Management Systems)</li>
-      <li>EECS 485 (Web Systems)</li>
-      <li>EECS 490 (Computer Languages)</li>
-      <li>EECS 493 (User Interface Development)</li>
-    </ul>
-  </div>
-  <p>Club Affiliations</p>
+  <div class="edu_content">
+  <strong>Club Affiliations</strong>
   <ul>
     <li>Executive Officer of Michigan Snowboard Club</li>
     <li>Member of Michigan Scandinavian Club</li>
   </ul>
+</div>
+</div>
 </div>
 {% endblock content %}
