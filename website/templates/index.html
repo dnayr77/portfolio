@@ -5,24 +5,238 @@
   <div id="intro" class="center_text top_20">
     <h3>Hi, my name is Ryan Dunn and this is my Website!</h3>
   </div>
-  <div class="top_20">
-  <div class="picture_holder">
-    <img id="img" src={{ url_for('static', filename = 'media/temp-self-2.jpg') }} alt="Profile_Pic" class="profile_pic">
-  </div>
   <div class="bio_container">
-    <ul>
-    <li><h4>Software Developer</h4></li>
-    <p>I recently graduated from the University of Michigan and am looking to put my skills and passion to use.
-     My focus is on Web and Mobile App Development.</p>
-    <li><h4>Lover Of All Things Tech</h4></li>
-    <p>My intense fascination and interest in tech pushed me to become a software developer. In my free time you
-      can find me writing code, building computers, flying homemade quadcopters, and playing video games.</p>
-    <li><h4>World Traveler</h4></li>
-    <p>A master of finding cheap airline tickets so I can experience new cultures and destinations when able.</p>
-    <li><h4></h4></li>
-    <p>words</p>
-    <ul>
+    <div class="bio_pic">
+      <img id="img" src={{ url_for('static', filename = 'media/temp-self-2.jpg') }} alt="Profile_Pic" class="profile_pic">
+    </div>
+
+    <div class="bio_description">
+      <div class="bio_section">
+        <h4>Software Developer</h4>
+        <div id="collapse1" style="display:none; position:relative;">
+          <p>I recently graduated from the University of Michigan with a BSE in Computer Science Engineering
+            and I am looking to put my skills and passion to use. With a focus on Web and Mobile App Development,
+            I hope to develop XXXX</p>
+          <div class="project_code">
+            <span class="badge badge-success bio_badge">Java</span>
+            <span class="badge badge-primary bio_badge">Python</span>
+            <span class="badge badge-warning bio_badge">JavaScript</span>
+            <span class="badge badge-info bio_badge">C/C++</span>
+            <span class="badge badge-danger bio_badge">SQL</span>
+          </div>
+        </div>
+        <a href="#collapse1" id="nav_1" class="nav-toggle"><span class="expand">&#10095;</span></a>
+      </div>
+
+      <div class="bio_section">
+        <h4>About Me</h4>
+        <div id="collapse2" style="display:none; position:relative;">
+          <strong>Lover Of All Things Tech</strong>
+
+          <p>My intense fascination and interest in tech pushed me to become a software developer. In my free time you
+            can find me writing code, building computers, flying homemade quadcopters, and playing video games.</p>
+
+          <strong>World Traveler</strong>
+
+          <p>I love to experience new cultures and destinations, as I thrive when meeting people from
+            other cultures and backgrounds than my own. A bonus when traveling, is to explore new food
+            and flavors as it inspires me in my own cooking.</p>
+
+          <strong>Teamwork makes the Dreamwork</strong>
+
+          <p>Throughout high school I was in the school soccer team, achieving XX and XX. Over the last couple of
+            years, I have been a part of an amateur soccer team. I enjoy playing soccer as it enables me to be part
+            of and accomplish as a team, yet it gives me individual strength as I need to succeed on my own as well.</p>
+        </div>
+        <a href="#collapse2" class="nav-toggle"><span class="expand">&#10095;</span></a>
+      </div>
+
+      <div class="bio_section">
+        <h4>Technical Skills</h4>
+        <div id="collapse3" style="display:none">
+          <strong>Programming Languages</strong>
+          <p>These are the programming languages that I am fluent in and love to use!</p>
+          <div class="bio_code_section">
+            <span class="badge badge-success bio_badge">Java</span> Android Applications and Desktop Applications
+            <a href="#language1" class="language-toggle">read more</a>
+            <div id="language1" class="bio_code_description">
+              <ul>
+                <li>I love java because it allows me to bring my passion to life and share it with others!</li>
+              </ul>
+            </div>
+          </div>
+          <div class="bio_code_section">
+            <span class="badge badge-warning bio_badge">JavaScript</span>Client-Side functionality in my Web Applications
+            <a href="#language2" class="language-toggle">read more</a>
+            <div id="language2" class="bio_code_description">
+              I love java because it allows me to bring my passion to life and share it with others!
+            </div>
+          </div>
+          <div class="bio_code_section">
+            <span class="badge badge-primary bio_badge">Python</span>Web Apps, Backend Functionality, Scripting, Prototyping, etc.
+            <a href="#language3" class="language-toggle">read more</a>
+            <div id="language3" class="bio_code_description">
+              I love java because it allows me to bring my passion to life and share it with others!
+            </div>
+          </div>
+          <div class="bio_code_section">
+            <span class="badge badge-info bio_badge">C/C++</span>High Perfomance Computing
+            <a href="#language4" class="language-toggle">read more</a>
+            <div id="language4" class="bio_code_description">
+              I love java because it allows me to bring my passion to life and share it with others!
+            </div>
+          </div>
+          <strong>Databases</strong>
+          <p>The hero in the background, experience working with:<p>
+          <div class="bio_code">
+            <span class="badge badge-danger bio_badge">Oracle</span>
+            <span class="badge badge-danger bio_badge">MySQL</span>
+            <span class="badge badge-danger bio_badge">Mongodb</span>
+            <span class="badge badge-danger bio_badge">Django</span>
+          </div>
+          <strong>Frameworks and Tools</strong>
+          <p>Build powerful web applications, experience using:<p>
+          <div class="bio_code">
+            <span class="badge badge-light bio_badge">React</span>
+            <span class="badge badge-light bio_badge">Vue.js</span>
+            <span class="badge badge-light bio_badge">AngularJS</span>
+            <span class="badge badge-light bio_badge">JQuery</span>
+          </div>
+        </div>
+        <a href="#collapse3" class="nav-toggle"><span class="expand">&#10095;</span></a>
+      </div>
+
+      <div class="bio_section">
+        <h4>This Website</h4>
+        <div id="collapse4" style="display:none">
+          <div class="bio_web_code">
+          <strong>Deployed</strong><span class="badge badge-primary bio_web_badge">Python</span>
+          <ul>
+            <li>Flask Web Application Served by Gunicorn</li>
+            <li>Amazon AWS ubuntu 18.04 micro instance</li>
+            <li>Server code checks for mobile and sends correct template</li>
+          </ul>
+          </div>
+          <div class="bio_web_code">
+            <strong>Served</strong>
+            <span class="badge badge-warning bio_web_badge">JavaScript</span>
+            <span class="badge badge-light bio_web_badge">JQuery</span>
+            <span class="badge badge-info bio_web_badge">HTML/CSS</span>
+            <span class="badge badge-secondary bio_web_badge">Bootstrap</span>
+            <ul>
+              <li>Javascript and JQuery handles client-side interactions</li>
+              <li>Bootstrap nav-bar, buttons, badges, etc.</li>
+            </ul>
+          </div>
+          <div class="bio_web_code">
+            <strong>Smart</strong>
+            <span class="badge badge-primary bio_web_badge">Python</span>
+            <span class="badge badge-light bio_web_badge">Jinja2</span>
+            <ul>
+              <li>Communicate with server through Jinja2</li>
+              <li>Parse contact form info and format into email</li>
+              <li>Connect with google email server to send contact form info</li>
+            </ul>
+          </div>
+        </div>
+        <a href="#collapse4" class="nav-toggle"><span class="expand">&#10095;</span></a>
+      </div>
+
+    </div>
   </div>
-  </div>
+
+  <script>
+    $(document).ready(function () {
+    setTimeout(function() {
+      $("#nav_1").html("<span class='expand'>&#10094;</a>");
+      expandBio($("#collapse1")); }, 200);
+
+    //setTimeout(function() {
+    //  $("#intro").slideToggle("slow") }, 1000);
+
+    var reduce = true;
+
+    $('.language-toggle').click(function () {
+      var collapse_content_selector = $(this).attr('href');
+      var toggle_switch = $(this);
+      if($(collapse_content_selector).css('display') == 'none') {
+        toggle_switch.html("read less");
+      }
+      else {
+        toggle_switch.html("read more");
+      }
+      $(collapse_content_selector).slideToggle("slow");
+    });
+
+    $('.nav-toggle').click(function () {
+      var welcome_message = $("#intro");
+      if (welcome_message.css('display') != 'none') {
+        welcome_message.slideToggle("slow");
+      }
+      var collapse_content_selector = $(this).attr('href');
+      var toggle_switch = $(this);
+      $('.nav-toggle').html("<span class='expand'>&#10095;</a>");
+      if (!reduce) {
+        toggle_switch.html("<span class='expand'>&#10094;</a>");
+        expandBio(collapse_content_selector);
+        reduce = true;
+      }
+      else if ($(collapse_content_selector).css('display') != 'none') {
+        reduceBio();
+        $(collapse_content_selector).slideToggle("slow");
+        reduce = false;
+      }
+      else {
+        toggle_switch.html("<span class='expand'>&#10094</a>");
+        $(collapse_content_selector).slideToggle("slow");
+      }
+      console.log($(collapse_content_selector));
+
+      var collapse_array = ["#collapse1", "#collapse2", "#collapse3", "#collapse4"];
+      var i;
+      for(i = 0; i < 4; i++) {
+        if(collapse_content_selector != collapse_array[i]) {
+          if($(collapse_array[i]).css('display') != 'none') {
+            $(collapse_array[i]).slideToggle("slow");
+          }
+        }
+      }
+    });
+  });
+
+  function expandBio(collapse_content_selector) {
+    var x = 0;
+    var imgWidth = 45;
+    var bioWidth = 55;
+    var intervalID = window.setInterval(function () {
+       imgWidth--;
+       bioWidth++;
+       $(".bio_pic").css('width', imgWidth.toString() + '%');
+       $(".bio_description").css('width', bioWidth.toString() + '%');
+
+       if (++x === 10) {
+           window.clearInterval(intervalID);
+           $(collapse_content_selector).slideToggle("slow");
+       }
+    }, 20);
+  }
+
+  function reduceBio() {
+    var x = 0;
+    var imgWidth = 35;
+    var bioWidth = 65;
+    var intervalID = window.setInterval(function () {
+       imgWidth++;
+       bioWidth--;
+       $(".bio_description").css('width', bioWidth.toString() + '%');
+       $(".bio_pic").css('width', imgWidth.toString() + '%');
+
+       if (++x === 10) {
+           window.clearInterval(intervalID);
+       }
+    }, 20);
+  }
+
+  </script>
 
 {% endblock content %}

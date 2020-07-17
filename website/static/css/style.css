@@ -29,7 +29,23 @@
   padding: 5px;
 }
 
+.page_container {
+  margin-top: 10px;
+  max-width: 1100px;
+  min-width: 1000px;
+  height: auto !important;
+  overflow: auto;
+  min-height: 100%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  background-color: #EBEDEF;
+  background-color: hsl(210, 2%, 93%, .4);
+}
+
 .contact_container {
+  flex: 1 1 auto;
   margin-top: 15px;
   background-color: hsl(210, 10%, 95%);
   border-radius: 10px;
@@ -39,15 +55,31 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.confirmation_container {
+  flex: 1 1 auto;
+  margin-top: 15px;
+  background-color: hsl(210, 10%, 95%);
+  border-radius: 10px;
+  border-style: solid;
+  border-width: medium;
+  border-color: hsl(210, 10%, 97%);
+  width: 90%;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px;
 }
 
 .education_container {
-  height: 100%;
+  flex: 1 1 auto;
   width: 85%;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   position: relative;
   margin-top: 30px;
   padding: 20px;
@@ -75,6 +107,7 @@
   border-width: medium;
   border-color: hsl(210, 10%, 97%);
 }
+
 
 .project_head {
   overflow: auto;
@@ -128,6 +161,46 @@
   user-select: none;
 }
 
+.expand{
+  transform: rotate(90deg);
+  cursor: pointer;
+  position: absolute;
+  right: 5%;
+  top: 5px;
+  margin-right: -15px;
+  padding: 10px;
+  color: blue;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 5px;
+  user-select: none;
+}
+
+.expand .expand_tip {
+  transform: rotate(-90deg);
+  visibility: hidden;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  top: -20px;
+  right: 20px;
+}
+
+
+.expand:hover {
+  background-color: rgba(255,255,255,0.8);
+}
+
+.expand:hover .expand_tip {
+  visibility: visible;
+}
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -167,19 +240,22 @@
   width: 100%;
   position: relative;
 }
-
-.page_container {
-  margin-top: 10px;
-  max-width: 1000px;
-  min-width: 800px;
-  height: auto !important;
-  overflow: auto;
-  min-height: 100%;
-  margin: auto;
+.project_container {
+  height: 100%;
+  width: 75%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 30px;
   position: relative;
-  background-color: #EBEDEF;
+  margin-top: 30px;
+  padding: 20px;
+  overflow: auto;
+  background-color: hsl(210, 10%, 95%);
+  border-radius: 10px;
+  border-style: solid;
+  border-width: medium;
+  border-color: hsl(210, 10%, 97%);
 }
-
 .profile_pic {
   border-radius: 10px;
   max-width: 100%;
@@ -189,11 +265,11 @@
   object-fit: contain;
 }
 
-.picture_holder {
+.bio_pic {
   padding-left: 10px;
   padding-top: 10px;
   width: 45%;
-  float: left;
+  float: right;
 }
 
 .degree_title {
@@ -237,12 +313,101 @@
 }
 
 .bio_container {
+  flex: 1 1 auto;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  position: relative;
+  margin-top: 20px;
+  padding: 20px;
+  overflow: auto;
+  background-color: hsl(210, 10%, 95%);
+  border-radius: 10px;
+  border-style: solid;
+  border-width: medium;
+  border-color: hsl(210, 10%, 97%);
+}
+
+.bio_description {
   width: 55%;
-  padding-top: 10px;
-  padding-right: 10px;
   height: 100%;
+  float: left;
+}
+
+.language_more {
+  border-radius: 10px;
+  border-style: solid;
+  border-width: medium;
+  border-color: hsl(210, 10%, 97%);
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: none;
+  position: relative;
+}
+
+.bio_section {
   text-align: left;
+  background-color: hsl(210, 10%, 90%);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.bio_code {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.bio_code_section {
+  margin-bottom: 15px;
+  padding: 5px;
+  background-color: hsl(210, 10%, 85%);
+  border-radius: 5px;
+}
+
+.bio_badge {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  font-size: medium;
+}
+
+.bio_web_badge {
+  margin-left: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  font-size: small;
+}
+
+.bio_web_code {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+.language-toggle {
   float: right;
+  margin-right: 5px;
+}
+
+.bio_code_description {
+  margin-left: 15px;
+  display: none;
+  position: relative;
 }
 
 .project_left {
