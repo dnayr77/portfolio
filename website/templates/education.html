@@ -2,46 +2,75 @@
 {% set active_page = "education" %}
 {% block content %}
 <div class="education_container">
-<div class="edu_header">
-    <div class="umich_symbol">
-      <img src={{ url_for('static', filename = 'media/CoE-umich.png') }} alt="Umich Eng" class="umich_symbol">
+  <div class="edu_header">
+      <div class="umich_symbol">
+        <img src={{ url_for('static', filename = 'media/CoE-umich.png') }} alt="Umich Eng" class="umich_symbol">
+      </div>
+    <div class="degree_title">
+      <h3>BSE in Computer Science Engineering 2015-2020</h3>
+      <h4>University of Michigan – Ann Arbor, MI</h4>
     </div>
-  <div class="degree_title">
-    <h3>BSE in Computer Science Engineering 2015-2020</h3>
-    <h4>University of Michigan – Ann Arbor, MI</h4>
   </div>
-</div>
-<div class="edu_container">
+
   <div class="edu_content">
-    <strong>Technical Coursework</strong>
     <div class="edu_container">
-    <div class="class_list">
-      <ul>
-        <li>EECS 281 (Data Structures/Algorithms)</li>
-        <li>EECS 285 (Java Applications)</li>
-        <li>EECS 270 (Logic Design/Verilog)</li>
-        <li>EECS 370 (Computer Organization)</li>
-        <li>EECS 376 (Foundations of Computer Science)</li>
-      </ul>
-    </div>
-    <div class="class_list">
-      <ul>
-        <li>EECS 441 (Mobile App Development)</li>
-        <li>EECS 484 (Database Management Systems)</li>
-        <li>EECS 485 (Web Systems)</li>
-        <li>EECS 490 (Computer Languages)</li>
-        <li>EECS 493 (User Interface Development)</li>
-      </ul>
-    </div>
+      <div class="btn-group-vertical btn-group-toggle class_list" data-toggle="buttons">
+        <label class="btn btn-dark disabled edu_btn_top" aria-disabled="true" disabled id="class-1">
+          Technical Coursework
+        </label>
+        <label class="btn btn-info nav-toggle btn-sm edu_button" id="class-1" href="#collapse1">
+          EECS 281 (Data Structures/Algorithms)
+        </label>
+        <label class="btn btn-info nav-toggle btn-sm edu_button" id="class-2" href="#collapse2">
+          EECS 285 (Java Applications)
+        </label>
+        <label class="btn btn-info nav-toggle btn-sm edu_button" id="class-3" href="#collapse3">
+          EECS 270 (Logic Design/Verilog)
+        </label>
+        <label class="btn btn-info nav-toggle btn-sm edu_button" id="class-3" href="#collapse3">
+          EECS 370 (Computer Organization)
+        </label>
+        <label class="btn btn-info nav-toggle btn-sm edu_button" id="class-3" href="#collapse3">
+          EECS 376 (Foundations of Computer Science)
+        </label>
+        <label class="btn btn-info nav-toggle btn-sm edu_button" id="class-3" href="#collapse3">
+          EECS 441 (Mobile App Development)
+        </label>
+        <label class="btn btn-info nav-toggle btn-sm edu_button" id="class-3" href="#collapse3">
+          ECS 484 (Database Management Systems)
+        </label>
+        <label class="btn btn-info nav-toggle btn-sm edu_button" id="class-3" href="#collapse3">
+          EECS 485 (Web Systems)
+        </label>
+        <label class="btn btn-info nav-toggle btn-sm edu_button" id="class-3" href="#collapse3">
+          EECS 490 (Computer Languages)
+        </label>
+        <label class="btn btn-info nav-toggle btn-sm edu_button edu_btn_bottom"  id="class-3" href="#collapse3">
+          EECS 493 (User Interface Development)
+        </label>
+      </div>
+      <div class="class_info">
+        <ul>
+          <li>EECS 281 (Data Structures/Algorithms)</li>
+          <li>EECS 285 (Java Applications)</li>
+          <li>EECS 270 (Logic Design/Verilog)</li>
+          <li>EECS 370 (Computer Organization)</li>
+          <li>EECS 376 (Foundations of Computer Science)</li>
+          <li>EECS 441 (Mobile App Development)</li>
+          <li>EECS 484 (Database Management Systems)</li>
+          <li>EECS 485 (Web Systems)</li>
+          <li>EECS 490 (Computer Languages)</li>
+          <li>EECS 493 (User Interface Development)</li>
+        </ul>
+      </div>
     </div>
   </div>
   <div class="edu_content">
-  <strong>Club Affiliations</strong>
-  <ul>
-    <li>Executive Officer of Michigan Snowboard Club</li>
-    <li>Member of Michigan Scandinavian Club</li>
-  </ul>
-</div>
-</div>
+    <strong>Extracurricular Activities</strong>
+    <ul>
+      <li>Executive Officer of Michigan Snowboard Club</li>
+      <li>Member of Michigan Scandinavian Club</li>
+    </ul>
+  </div>
 </div>
 {% endblock content %}
