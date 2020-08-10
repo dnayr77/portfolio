@@ -3,16 +3,19 @@
 {% block content %}
 
   <div id="intro" class="center_text top_20">
-    <h3>Hi, my name is Ryan Dunn and this is my Website!</h3>
+    <h3><b>Hi, my name is Ryan Dunn and this is my Website!</b></h3>
   </div>
   <div class="bio_container">
 
     <div class="bio_pic">
-      <div class="project_image" name="bio_image">
+      <div class="bio_image_size" name="bio_image">
         <img id="img" src={{ url_for('static', filename = 'media/bio_1.jpeg') }} alt="Profile_Pic" class="profile_pic">
       </div>
-      <div class="project_image" name="bio_image">
+      <div class="bio_image_size" name="bio_image">
         <img id="img" src={{ url_for('static', filename = 'media/bio_2.jpeg') }} alt="Profile_Pic" class="profile_pic">
+      </div>
+      <div class="bio_image_size" name="bio_image">
+        <img id="img" src={{ url_for('static', filename = 'media/bio_3.jpeg') }} alt="Profile_Pic" class="profile_pic">
       </div>
 
 
@@ -23,6 +26,7 @@
       <div style="text-align:center; margin-top: 5px;">
         <span name="bio_dot" class="dot" onclick="currentSlide(0, 'bio')"></span>
         <span name="bio_dot" class="dot" onclick="currentSlide(1, 'bio')"></span>
+        <span name="bio_dot" class="dot" onclick="currentSlide(2, 'bio')"></span>
       </div>
 
       <div class="bio_pic_description">
@@ -30,7 +34,10 @@
           Click through to see pictures that help to describe who I am!
         </span>
         <span name="bio_text" style="display: none">
-          I love the culture in Copenhagen!
+          I love the culture in Copenhagen! Great food, friendly people, and safe bike lanes.
+        </span>
+        <span name="bio_text" style="display: none">
+          Skiing is one of my favorite activities to do during the Winter!
         </span>
       </div>
     </div>
@@ -39,13 +46,13 @@
       <div class="bio_section">
         <div class="bio_header bg-dark">
           <div class="btn-group btn-group-toggle" style="width:100%" data-toggle="buttons">
-            <label class="btn btn-info nav-toggle" id="header-1" href="#collapse1">
+            <label class="btn btn-info nav-toggle bio-toggle" id="header-1" href="#collapse1">
               About Me
             </label>
-            <label class="btn btn-info nav-toggle" id="header-2" href="#collapse2">
+            <label class="btn btn-info nav-toggle bio-toggle" id="header-2" href="#collapse2">
               Technical Skills
             </label>
-            <label class="btn btn-info nav-toggle" id="header-3" href="#collapse3">
+            <label class="btn btn-info nav-toggle bio-toggle" id="header-3" href="#collapse3">
               This Website
             </label>
           </div>

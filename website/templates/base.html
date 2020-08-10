@@ -22,8 +22,8 @@
 
 <body style="background-image: url({{ url_for('static', filename = 'media/site-background.png') }}) ">
     <div class = "page_container">
-      <nav class="navbar navbar-expand-sm navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="{{ url_for('show_index') }}">Ryan Dunn</a>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="{{ url_for('show_index') }}" style="font-size: 1.4em;">Ryan Dunn</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,19 +31,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li {% if request.path == '/' %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
-              <a class="nav-link" href="{{ url_for('show_index') }}">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{{ url_for('show_index') }}" style="font-size: 1.2em;"> Home <span class="sr-only">(current)</span></a>
             </li>
             <li {% if request.path == '/projects' %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
-              <a class="nav-link" href="{{ url_for('show_projects') }}">Projects <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{{ url_for('show_projects') }}" style="font-size: 1.2em;">Projects <span class="sr-only">(current)</span></a>
             </li>
             <li {% if request.path == '/education' %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
-              <a class="nav-link" href="{{ url_for('show_education') }}">Education <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{{ url_for('show_education') }}" style="font-size: 1.2em;">Education <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://github.com/dnayr77" target="_blank">Github <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="https://github.com/dnayr77" target="_blank" style="font-size: 1.2em;">Github <span class="sr-only">(current)</span></a>
             </li>
             <li {% if request.path == '/contact' %}class="nav-item active"{% else %}class="nav-item"{% endif %}>
-              <a class="nav-link" href="{{ url_for('show_contact') }}">Contact <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="{{ url_for('show_contact') }}" style="font-size: 1.2em;">Contact <span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div>
