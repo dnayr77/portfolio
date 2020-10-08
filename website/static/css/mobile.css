@@ -317,14 +317,14 @@
   width: 96%;
   height: 100%;
   margin-left: 2%;
-  float: left;
+  margin-top: 10px;
 }
 
 .bio_pic {
+  margin-top: 15px;
   margin-left: 15%;
   width: 70%;
   position: relative;
-  float: right;
 }
 
 .bio_pic_description {
