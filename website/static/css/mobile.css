@@ -287,7 +287,8 @@
 }
 
 .bio_container {
-  flex: 1 1 auto;
+  display: flex;
+  flex-flow: column;
   width: 97%;
   margin-right: auto;
   margin-left: auto;
