@@ -2,44 +2,9 @@
 
 {% block content %}
 <div id="intro" class="center_text top_20">
-  <h3><b>Hi, my name is Ryan Dunn and this is my Website!</b></h3>
+  <h5><b>Hi, my name is Ryan Dunn and this is my Website!</b></h5>
 </div>
 <div class="bio_container">
-
-  <div class="bio_pic">
-    <div class="bio_image_size" name="bio_image">
-      <img id="img" src={{ url_for('static', filename = 'media/bio_1.jpeg') }} alt="Profile_Pic" class="profile_pic">
-    </div>
-    <div class="bio_image_size" name="bio_image">
-      <img id="img" src={{ url_for('static', filename = 'media/bio_2.jpeg') }} alt="Profile_Pic" class="profile_pic">
-    </div>
-    <div class="bio_image_size" name="bio_image">
-      <img id="img" src={{ url_for('static', filename = 'media/bio_3.jpeg') }} alt="Profile_Pic" class="profile_pic">
-    </div>
-
-
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1, 'bio')">&#10094;</a>
-    <a class="next" onclick="plusSlides(1, 'bio')">&#10095;</a>
-
-    <div style="text-align:center; margin-top: 5px;">
-      <span name="bio_dot" class="dot" onclick="currentSlide(0, 'bio')"></span>
-      <span name="bio_dot" class="dot" onclick="currentSlide(1, 'bio')"></span>
-      <span name="bio_dot" class="dot" onclick="currentSlide(2, 'bio')"></span>
-    </div>
-
-    <div class="bio_pic_description">
-      <span name="bio_text" style="display: none">
-        Click through to see pictures that help to describe who I am!
-      </span>
-      <span name="bio_text" style="display: none">
-        I love the culture in Copenhagen! Great food, friendly people, and safe bike lanes.
-      </span>
-      <span name="bio_text" style="display: none">
-        Skiing is one of my favorite activities to do during the Winter!
-      </span>
-    </div>
-  </div>
 
   <div class="bio_description">
     <div class="bio_section">
@@ -194,6 +159,42 @@
       </div>
     </div>
   </div>
+
+  <div class="bio_pic">
+    <div class="bio_image_size" name="bio_image">
+      <img id="img" src={{ url_for('static', filename = 'media/bio_1.jpeg') }} alt="Profile_Pic" class="profile_pic">
+    </div>
+    <div class="bio_image_size" name="bio_image">
+      <img id="img" src={{ url_for('static', filename = 'media/bio_2.jpeg') }} alt="Profile_Pic" class="profile_pic">
+    </div>
+    <div class="bio_image_size" name="bio_image">
+      <img id="img" src={{ url_for('static', filename = 'media/bio_3.jpeg') }} alt="Profile_Pic" class="profile_pic">
+    </div>
+
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1, 'bio')">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 'bio')">&#10095;</a>
+
+    <div style="text-align:center; margin-top: 5px;">
+      <span name="bio_dot" class="dot" onclick="currentSlide(0, 'bio')"></span>
+      <span name="bio_dot" class="dot" onclick="currentSlide(1, 'bio')"></span>
+      <span name="bio_dot" class="dot" onclick="currentSlide(2, 'bio')"></span>
+    </div>
+
+    <div class="bio_pic_description">
+      <span name="bio_text" style="display: none">
+        Click through to see pictures that help to describe who I am!
+      </span>
+      <span name="bio_text" style="display: none">
+        I love the culture in Copenhagen! Great food, friendly people, and safe bike lanes.
+      </span>
+      <span name="bio_text" style="display: none">
+        Skiing is one of my favorite activities to do during the Winter!
+      </span>
+    </div>
+  </div>
+  
 </div>
 
 <script>
