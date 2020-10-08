@@ -32,7 +32,7 @@ def show_projects():
     if platform == 'iphone' or platform == 'android':
         return render_template("projects_mobile.html", title = title)
     else:
-        return render_template("projects.html", title=title)
+        return render_template("projects.html", title = title)
 
 @website.app.route('/education')
 def show_education():
@@ -43,7 +43,7 @@ def show_education():
     if platform == 'iphone' or platform == 'android':
         return render_template("education_mobile.html", title = title)
     else:
-        return render_template("education.html", title=title)
+        return render_template("education.html", title = title)
 
 
 @website.app.route('/contact', methods=['GET', 'POST'])
@@ -79,9 +79,7 @@ def show_contact():
 
         return render_template("contact_mobile.html", title = title)
     else:
-
-
-        return render_template("contact.html", title=title, form=form)
+        return render_template("contact.html", title = title, form = form)
 
 @website.app.route('/confirmation')
 def show_confirmation():
@@ -92,7 +90,7 @@ def show_confirmation():
     if platform == 'iphone' or platform == 'android':
         return render_template("confirmation.html", title = title)
     else:
-        return render_template("confirmation.html", title=title)
+        return render_template("confirmation.html", title = title)
 
 
 class ContactForm(FlaskForm):

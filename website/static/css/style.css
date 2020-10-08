@@ -10,7 +10,7 @@
   display: flex;
   flex-flow: column;
   background-color: #EBEDEF;
-  background-color: hsl(210, 2%, 93%, .4);
+  background-color: hsl(210, 2%, 93%, .6);
 }
 
 .contact_container {

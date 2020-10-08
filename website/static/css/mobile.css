@@ -24,7 +24,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
-  padding: 20px;
+  padding: 15px;
 }
 
 .confirmation_container {
@@ -35,7 +35,7 @@
   border-style: solid;
   border-width: medium;
   border-color: hsl(210, 10%, 97%);
-  width: 95%;
+  width: 90%;
   margin-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
@@ -49,8 +49,8 @@
   margin-left: auto;
   margin-bottom: 40px;
   position: relative;
-  margin-top: 30px;
-  padding: 20px;
+  margin-top: 20px;
+  padding: 10px;
   overflow: auto;
   background-color: hsl(210, 10%, 95%);
   border-radius: 10px;
@@ -65,9 +65,9 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
+  padding-bottom: 10px;
   position: relative;
   margin-top: 30px;
-  padding: 20px;
   overflow: auto;
   background-color: hsl(210, 10%, 95%);
   border-radius: 10px;
@@ -77,15 +77,17 @@
 }
 
 
-
 .project_head {
+  margin-top: 15px;
+  margin-left: 2%;
+  margin-bottom: 10px;
   overflow: auto;
-  width: 100%;
+  width: 96%;
   height: 100%;
 }
 
 .project_title {
-  float: left;
+  width: 70%;
 }
 
 .project_badge {
@@ -98,21 +100,42 @@
   font-size: medium;
 }
 
-.project_description {
+.project_description_style {
   background-color: hsl(210, 10%, 90%);
   border-radius: 10px;
   padding: 5px;
-  margin-top: 10px;
-  float: left;
-  width: 60%;
+  margin-bottom: 15px;
   position: relative;
+  float: left;
+}
+
+.project_description {
+  width: 58%;
+  margin-left: 2%;
 }
 
 .project_photo {
   float: right;
-  width: 30%;
+  margin-right: 4%;
+  margin-bottom: 15px;
+  width: 32%;
   position: relative;
-  margin-right: 10px;
+}
+
+.insta_description {
+  width: 55%;
+  margin-left: 2%;
+}
+
+.insta_photo {
+  margin-right: 2%;
+  float: right;
+  width: 38%;
+  position: relative;
+}
+
+.mde_description {
+  width: 60%;
 }
 
 .prev, .next {
@@ -121,8 +144,10 @@
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
+  padding: 12px;
   color: white;
+  background-color: hsl(0, 0%, 0%, .05);
+
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -132,13 +157,10 @@
 
 .expand{
   transform: rotate(90deg);
-  cursor: pointer;
-  position: absolute;
-  right: 5%;
-  top: 5px;
-  margin-right: -15px;
-  padding: 10px;
+  position: relative;
+  display: inline-block;
   color: blue;
+  margin-left: 10px;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -146,38 +168,14 @@
   user-select: none;
 }
 
-.expand .expand_tip {
-  transform: rotate(-90deg);
-  visibility: hidden;
-  background-color: white;
-  color: black;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  top: -20px;
-  right: 20px;
-}
-
-
-.expand:hover {
-  background-color: rgba(255,255,255,0.8);
-}
-
-.expand:hover .expand_tip {
-  visibility: visible;
-}
-
 .next {
-  right: 0;
+  right: 1px;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(255,255,255,0.8);
+  background-color: hsl(0, 0%, 0%, .2);
 }
 
 .dot {
@@ -195,14 +193,15 @@
   background-color: #717171;
 }
 
-.mde_image {
+.project_image {
   display: none;
   width: 100%;
 }
 
 .project_git {
-  margin-top: 3px;
-  float: right;
+  position: absolute;
+  top: 20px;
+  right: 4%;
 }
 
 .project_code {
@@ -213,42 +212,66 @@
 .profile_pic {
   border-radius: 10px;
   max-width: 100%;
-  border-color: black;
-  border-width: thin;
-  border-style: solid;
   object-fit: contain;
 }
 
-.bio_pic {
-  padding-left: 10px;
-  padding-top: 10px;
-  width: 45%;
-  float: right;
-}
 
 .degree_title {
   display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .edu_header {
   width: 100%;
   position: relative;
   padding: 10px;
+  margin-bottom: 20px;
+  background-color: hsl(210, 10%, 90%);
+  border-radius: 10px;
 }
 
 .edu_container {
   width: 100%;
-  padding: 10px;
+  position: relative;
+  overflow: auto;
+}
+
+.edu_btn_top {
+  border-top-left-radius: 10px!important;
+  border-top-right-radius: 0px!important;
+  text-align: left;
+}
+
+.edu_btn_bottom {
+  border-bottom-left-radius: 10px!important;
+  border-bottom-right-radius: 0px!important;
 }
 
 .edu_content {
   background-color: hsl(210, 10%, 90%);
   border-radius: 10px;
-  padding: 5px;
   margin-top: 10px;
-  float: left;
   width: 100%;
   position: relative;
+}
+
+.class_list {
+  width: 35%;
+  float: left;
+}
+
+.edu_button {
+  text-align: left;
+  padding-left: 0.75rem;
+}
+
+.class_info {
+  width: 60%;
+  margin-right: 3%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  float: right;
 }
 
 .umich_symbol {
@@ -273,8 +296,9 @@
   margin-left: auto;
   margin-bottom: 40px;
   position: relative;
-  margin-top: 20px;
-  padding: 20px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   overflow: auto;
   background-color: hsl(210, 10%, 95%);
   border-radius: 10px;
@@ -283,10 +307,42 @@
   border-color: hsl(210, 10%, 97%);
 }
 
+.bio_header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.bio-toggle {
+  font-size: 1.2em;
+}
+
 .bio_description {
-  width: 55%;
+  width: 53%;
   height: 100%;
+  margin-left: 2%;
   float: left;
+}
+
+.bio_pic {
+  margin-right: 2%;
+  width: 42%;
+  position: relative;
+  float: right;
+}
+
+.bio_pic_description {
+  background-color: hsl(210, 10%, 90%);
+  border-radius: 10px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.bio_toggle_center {
+  width: 95%;
 }
 
 .language_more {
@@ -305,12 +361,16 @@
 }
 
 .bio_section {
-  text-align: left;
   background-color: hsl(210, 10%, 90%);
   border-radius: 10px;
-  padding: 10px;
-  margin-top: 10px;
   float: left;
+  width: 100%;
+  position: relative;
+}
+
+.bio_content {
+  text-align: left;
+  padding: 10px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -352,6 +412,16 @@
   margin-top: 10px;
 }
 
+.bio_image_size {
+  display: none;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 10px;
+  border-color: black;
+  border-width: thin;
+  border-style: solid;
+}
 
 .language-toggle {
   float: right;
@@ -359,7 +429,9 @@
 }
 
 .bio_code_description {
-  margin-left: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
   display: none;
   position: relative;
 }
@@ -382,15 +454,6 @@
   float: right;
 }
 
-.edu_container {
-  padding: 10px;
-}
-
-.class_list {
-  display: inline-block;
-  margin: 10px;
-}
-
 .center_text {
   text-align: center;
 }
@@ -401,6 +464,10 @@
 
 .top_20 {
   margin-top: 20px;
+}
+
+.flex-even {
+  flex: 1;
 }
 
 body {
@@ -424,6 +491,19 @@ html {
 
 img[class] {
   width: 100%;
+}
+
+h4 {
+  font-weight: bold;
+}
+
+strong {
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+
+.nav-link a {
+  font-size:10em!important;
 }
 
 input[type=text], select, textarea {
