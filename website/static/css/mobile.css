@@ -313,10 +313,12 @@
 }
 
 .bio_description {
-  width: 96%;
-  height: 100%;
-  margin-left: 2%;
+  width: 100%;
+  padding: 5px;
   margin-top: 10px;
+  background-color: hsl(210, 10%, 90%);
+  border-radius: 10px;
+  position: relative;
 }
 
 .bio_pic {
@@ -356,13 +358,7 @@
   position: relative;
 }
 
-.bio_section {
-  background-color: hsl(210, 10%, 90%);
-  border-radius: 10px;
-  float: left;
-  width: 100%;
-  position: relative;
-}
+
 
 .bio_content {
   text-align: left;
