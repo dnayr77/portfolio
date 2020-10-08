@@ -14,17 +14,18 @@
 
 .contact_container {
   flex: 1 1 auto;
-  margin-top: 15px;
+  margin-top: 10px;
   background-color: hsl(210, 10%, 95%);
   border-radius: 10px;
   border-style: solid;
   border-width: medium;
+  overflow: auto;
   border-color: hsl(210, 10%, 97%);
   width: 95%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 40px;
-  padding: 15px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 .confirmation_container {
@@ -44,13 +45,13 @@
 
 .education_container {
   flex: 1 1 auto;
-  width: 95%;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 40px;
   position: relative;
   margin-top: 20px;
-  padding: 10px;
+  padding: 5px;
   overflow: auto;
   background-color: hsl(210, 10%, 95%);
   border-radius: 10px;
