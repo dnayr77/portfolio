@@ -58,13 +58,13 @@
 
 .project_container {
   height: 100%;
-  width: 95%;
+  width: 98%;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   padding-bottom: 10px;
   position: relative;
-  margin-top: 30px;
+  margin-top: 15px;
   overflow: auto;
   background-color: hsl(210, 10%, 95%);
   border-radius: 10px;
@@ -84,7 +84,7 @@
 }
 
 .project_title {
-  width: 70%;
+  width: 95%;
 }
 
 .project_badge {
@@ -103,7 +103,6 @@
   padding: 5px;
   margin-bottom: 15px;
   position: relative;
-  float: left;
 }
 
 .project_description {
@@ -120,14 +119,15 @@
 }
 
 .insta_description {
-  width: 55%;
-  margin-left: 2%;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .insta_photo {
-  margin-right: 2%;
-  float: right;
-  width: 38%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
   position: relative;
 }
 
@@ -215,14 +215,15 @@
 
 .degree_title {
   display: inline-block;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  width: 79%;
+  padding-left: 2px;
+  padding-right: 1px;
+  margin-top: 5px;
 }
 
 .edu_header {
   width: 100%;
   position: relative;
-  padding: 10px;
   margin-bottom: 20px;
   background-color: hsl(210, 10%, 90%);
   border-radius: 10px;
@@ -235,20 +236,17 @@
 }
 
 .edu_btn_top {
-  border-top-left-radius: 10px!important;
-  border-top-right-radius: 0px!important;
   text-align: left;
 }
 
 .edu_btn_bottom {
-  border-bottom-left-radius: 10px!important;
-  border-bottom-right-radius: 0px!important;
 }
 
 .edu_content {
   background-color: hsl(210, 10%, 90%);
   border-radius: 10px;
   margin-top: 10px;
+  margin-bottom: 10px;
   width: 100%;
   position: relative;
 }
@@ -273,7 +271,8 @@
 
 .umich_symbol {
   float: left;
-  width: 100px;
+  margin-top: 5px;
+  width: 21%;
 }
 
 
@@ -287,14 +286,15 @@
 }
 
 .bio_container {
-  width: 97%;
+  min-height: 100%;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  padding-bottom: 10px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 10px;
   position: relative;
-  margin-top: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
   overflow: auto;
   background-color: hsl(210, 10%, 95%);
   border-radius: 10px;
@@ -314,8 +314,7 @@
 
 .bio_description {
   width: 100%;
-  padding: 5px;
-  margin-top: 10px;
+  margin-bottom: 5px;
   background-color: hsl(210, 10%, 90%);
   border-radius: 10px;
   position: relative;
@@ -323,7 +322,7 @@
 
 .bio_pic {
   margin-top: 15px;
-  margin-left: 14%;
+  margin-left: 15%;
   width: 70%;
   position: relative;
 }
@@ -358,11 +357,9 @@
   position: relative;
 }
 
-
-
 .bio_content {
   text-align: left;
-  padding: 10px;
+  padding: 5px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -383,19 +380,19 @@
 }
 
 .bio_badge {
-  margin-left: 5px;
-  margin-right: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  font-size: medium;
-}
-
-.bio_web_badge {
-  margin-left: 10px;
+  margin-left: 2px;
+  margin-right: 3px;
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 5px;
+  font-size: small;
+}
+
+.bio_web_badge {
+  margin-left: 2px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 3px;
   font-size: small;
 }
 
@@ -420,8 +417,8 @@
 }
 
 .bio_code_description {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
   margin-top: 10px;
   display: none;
   position: relative;
