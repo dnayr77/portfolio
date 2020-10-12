@@ -23,7 +23,7 @@
     {% endfor %}
 
     <label for="Message">Subject</label>
-    {{ form.message(style="height:200px", placeholder="Your message..")}}
+    {{ form.message(style="height:150px", placeholder="Your message..")}}
     {% for error in form.message.errors %}
       <span style="color: red;">[{{ error }}]</span>
     {% endfor %}
@@ -34,6 +34,5 @@
     {% endfor %}
     </p>
   </form>
-  <br>
 </div>
 {% endblock content %}

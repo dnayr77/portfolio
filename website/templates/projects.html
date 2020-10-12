@@ -92,9 +92,7 @@
     <div class="project_title">
       <h4> Fabric Finding Android App (Capstone Project) </h4>
     </div>
-    <div class="project_git">
-      github
-    </div>
+
     <div class="project_code">
       <span class="badge badge-success project_badge">Java</span>
       <span class="badge badge-primary project_badge">Python</span>
@@ -133,18 +131,39 @@
     <strong>Description</strong>
     <ul>
       <li>Find fabric via image or search parameters</li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>Take a photo with your camera or select from your gallery</small>
+      </li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>Narrow the results of the image search with parameters such
+          as fabric type, brand, material, and color.</small>
+      </li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>Image is compared to database of fabric images using Python image-match package</small>
+      </li>
       <li>Interface with the server to send parameters and receive results</li>
-      <li>Load results asynchronously</li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>Load results and pictures asynchronously allowing for a smooth experience</small>
+      </li>
       <li>Identify network issues and resolve them</li>
+      <li>Use affiliate links to direct users to fabric.com</li>
     </ul>
   </div>
   <div class="project_description project_description_style">
     <strong>Tech Utilized</strong>
     <ul>
-      <li>Fabric Finding Android App (Capstone Project)</li>
       <li>Django Digital Ocean Server</li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>Used for our backend, the server took care of image searching and returning the results.</small>
+      </li>
       <li>PostgreSQL</li>
-      <li>image-match package</li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>Database consisted of pictures of fabric, their affiliate links and all of the info pertaining to the specific fabric.</small>
+      </li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>The database was populated using requests to fabric.com's servers through their affiliate program</small>
+      </li>
+      <li>Python image-match package</li>
       <li>Android Volley</li>
     </ul>
   </div>
@@ -154,9 +173,6 @@
   <div class="project_head">
     <div class="project_title">
       <h4> Budgeting App (Android)</h4>
-    </div>
-    <div class="project_git">
-      github
     </div>
     <div class="project_code">
       <span class="badge badge-success project_badge">Java</span>
@@ -189,10 +205,8 @@
   <div class="project_description project_description_style">
     <strong>Tech Utilized</strong>
     <ul>
-      <li>Django Digital Ocean Server</li>
-      <li>PostgreSQL</li>
-      <li>image-match package</li>
-      <li>Android Volley</li>
+      <li>Android Studio</li>
+      <li>Persistent Memory</li>
     </ul>
   </div>
 </div>
@@ -202,9 +216,7 @@
     <div class="project_title">
       <h4>Search Engine</h4>
     </div>
-    <div class="project_git">
-      github
-    </div>
+
 
     <div class="project_code">
       <span class="badge badge-success project_badge">Java</span>
@@ -213,35 +225,25 @@
     </div>
   </div>
 
-  <div class="project_photo">
-    <div class="search_image">
-      <img id="img" src={{ url_for('static', filename = 'media/mde_1.png') }} alt="Profile_Pic" class="profile_pic">
-    </div>
 
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1, 'mde')">&#10094;</a>
-    <a class="next" onclick="plusSlides(1, 'mde')">&#10095;</a>
-
-    <div style="text-align:center; margin-top: 5px;">
-      <span class="dot" onclick="currentSlide(1, 'mde')"></span>
-    </div>
-  </div>
 
   <div class="project_description project_description_style">
     <strong>Description</strong>
     <ul>
       <li>(Client and Server-Side Dynamic)</li>
       <li>Uses Hadoop for MapReduce</li>
+      <li>Uses page rank to order results</li>
       <li>Deployed on AWS</li>
     </ul>
   </div>
   <div class="project_description project_description_style">
     <strong>Tech Utilized</strong>
     <ul>
-      <li>Django Digital Ocean Server</li>
-      <li>PostgreSQL</li>
-      <li>image-match package</li>
-      <li>Android Volley</li>
+      <li>Python, JavaScript, HTML/CSS</li>
+      <li>Hadoop</li>
+      <li>Pagerank Algorithm</li>
+      <li>Flask</li>
+      <li>SQLite3</li>
     </ul>
   </div>
 </div>

@@ -75,9 +75,7 @@ def show_contact():
     else:
         print(form.errors)
     if platform == 'iphone' or platform == 'android':
-
-
-        return render_template("contact_mobile.html", title = title)
+        return render_template("contact_mobile.html", title = title, form = form)
     else:
         return render_template("contact.html", title = title, form = form)
 
