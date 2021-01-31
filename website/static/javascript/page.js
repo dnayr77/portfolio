@@ -10,9 +10,8 @@ const KEYS = {
   spacebar: 32
 };
 
-let createThrowingItemIntervalHandle;
-let currentThrowingFrequency = 2000;
-var photoIndex = {"mde": 0, "insta": 0, "budget": 0, "bio": 0};
+
+var photoIndex = {"mde": 0, "insta": 0, "budget": 0, "bio": 0, "thrive": 0};
 
 ////  Functional Code  ////
 

@@ -127,11 +127,22 @@
   width: 55%;
   margin-left: 2%;
 }
+.thrive_description {
+  width: 61%;
+  margin-left: 2%;
+}
 
 .insta_photo {
   margin-right: 2%;
   float: right;
   width: 38%;
+  position: relative;
+}
+
+.thrive_photo {
+  margin-right: 2%;
+  float: right;
+  width: 32%;
   position: relative;
 }
 
@@ -148,6 +159,23 @@
   padding: 12px;
   color: white;
   background-color: hsl(0, 0%, 0%, .4);
+
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev_light, .next_light {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 12px;
+  color: white;
+  background-color: hsl(1, 0%, 100%, .2);
 
   font-weight: bold;
   font-size: 18px;
@@ -181,6 +209,20 @@
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: hsl(0, 0%, 0%, .6);
+}
+
+.next_light {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev_light {
+  left: 0px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev_light:hover, .next_light:hover {
+  background-color: hsl(0, 0%, 100%, .6);
 }
 
 .dot {
