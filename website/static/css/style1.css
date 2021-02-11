@@ -403,7 +403,7 @@
 }
 
 .bio_description {
-  width: 55%;
+  width: 54%;
   display: flex;
   flex-flow: column;
   background-color: hsl(210, 10%, 90%);
@@ -416,7 +416,6 @@
 
 .bio_section {
   flex: 1 1 auto;
-  overflow: scroll;
   height: 100%;
   text-align: left;
   padding: 10px;

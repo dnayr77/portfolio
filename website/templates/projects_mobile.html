@@ -85,67 +85,165 @@
   </div>
 </div>
 
+
+
+
+
+<div class="project_container">
+  <div class="project_head">
+    <div class="project_title">
+      <h4>Thrive (Social Life Manager)</h4>
+    </div>
+    <div class="project_code">
+      <span class="badge badge-info project_badge">Swift</span>
+    </div>
+  </div>
+  <div class="thrive_description project_description_style">
+    <strong>Description</strong>
+    <ul>
+      <li>Thrive iOS App (Personal Project)</li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>This is a personal project that I started to learn SwiftUI</small>
+      </li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>In the future I would love to add it to the app store.</small>
+      </li>
+      <li>A Highly Customizable Life Management Helper</li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>Create tasks, events, goals or projects (Implemented).</small>
+      </li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>Add and Remove Different Views Depending on Use Type (Implemented)</small>
+      </li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>Edit or Mark tasks/events/etc. as Complete (Implemented)</small>
+      </li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>Keep Track of Your Progress Beyond Completed (To Be Implemented)</small>
+      </li>
+      <li>Social (To be Implemented)</li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>In the future I would like to create the backend needed to add others to your own projects, goals, and tasks.</small>
+      </li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>Compete, Collaborate, Thrive</small>
+      </li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>Keep track of your progress and let others know your accomplishments!</small>
+      </li>
+      <li>Smart</li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>Persistent Storage</small>
+      </li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>Cycles Recurring Tasks And Updates Data Structure Upon Start Up</small>
+      </li>
+    </ul>
+  </div>
+  <div class="thrive_description project_description_style">
+    <strong>Tech Utilized</strong>
+    <ul>
+      <li>SwiftUI</li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>Everything is written using SwiftUI</small>
+      </li>
+      <li style="margin-left: 5px; list-style-type: circle;">
+        <small>ListView, ScrollView, GeometryReader(for animations), Custom View Wrappers, Custom Core Data Classes</small>
+      </li>
+    </ul>
+  </div>
+  <div class="thrive_photo">
+    <div class="project_image" name="thrive_image">
+      <img id="img" src={{ url_for('static', filename = 'media/thrive0.png') }} alt="Profile_Pic" class="profile_pic">
+    </div>
+    <div class="project_image" name="thrive_image">
+      <img id="img" src={{ url_for('static', filename = 'media/thrive1.png') }} alt="Profile_Pic" class="profile_pic">
+    </div>
+    <div class="project_image" name="thrive_image">
+      <img id="img" src={{ url_for('static', filename = 'media/thrive4.png') }} alt="Profile_Pic" class="profile_pic">
+    </div>
+    <div class="project_image" name="thrive_image">
+      <img id="img" src={{ url_for('static', filename = 'media/thrive2.png') }} alt="Profile_Pic" class="profile_pic">
+    </div>
+    <div class="project_image" name="thrive_image">
+      <img id="img" src={{ url_for('static', filename = 'media/thrive3.png') }} alt="Profile_Pic" class="profile_pic">
+    </div>
+    <div class="project_image" name="thrive_image">
+      <img id="img" src={{ url_for('static', filename = 'media/thrive5.png') }} alt="Profile_Pic" class="profile_pic">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev_light" onclick="plusSlides(-1, 'thrive')">&#10094;</a>
+    <a class="next_light" onclick="plusSlides(1, 'thrive')">&#10095;</a>
+
+    <div style="text-align:center; margin-top: 5px;">
+      <span name="thrive_dot" class="dot" onclick="currentSlide(0, 'thrive')"></span>
+      <span name="thrive_dot" class="dot" onclick="currentSlide(1, 'thrive')"></span>
+      <span name="thrive_dot" class="dot" onclick="currentSlide(2, 'thrive')"></span>
+      <span name="thrive_dot" class="dot" onclick="currentSlide(3, 'thrive')"></span>
+      <span name="thrive_dot" class="dot" onclick="currentSlide(4, 'thrive')"></span>
+      <span name="thrive_dot" class="dot" onclick="currentSlide(5, 'thrive')"></span>
+    </div>
+  </div>
+</div>
+
 <div class="project_container">
   <div class="project_head">
     <div class="project_title">
       <h5> Fabric Finding Android App (Capstone Project) </h5>
     </div>
-    <div class="project_git">
-      github
-    </div>
+
     <div class="project_code">
       <span class="badge badge-success project_badge">Java</span>
       <span class="badge badge-primary project_badge">Python</span>
       <span class="badge badge-danger project_badge">SQL</span>
     </div>
   </div>
+<div class="project_description project_description_style">
+  <strong>Description</strong>
+  <ul>
+    <li>Find fabric via image or search parameters</li>
+    <li>Interface with the server to send parameters and receive results</li>
+    <li>Load results asynchronously</li>
+    <li>Identify network issues and resolve them</li>
+  </ul>
+</div>
+<div class="project_description project_description_style">
+  <strong>Tech Utilized</strong>
+  <ul>
+    <li>Fabric Finding Android App (Capstone Project)</li>
+    <li>Django Digital Ocean Server</li>
+    <li>PostgreSQL</li>
+    <li>image-match package</li>
+    <li>Android Volley</li>
+  </ul>
+</div>
+<div class="project_photo">
 
-  <div class="project_photo">
-
-    <div class="project_image" name="mde_image">
-      <img id="img" src={{ url_for('static', filename = 'media/mde_1.png') }} alt="Profile_Pic" class="profile_pic">
-    </div>
-    <div class="project_image" name="mde_image">
-      <img id="img" src={{ url_for('static', filename = 'media/mde_2.png') }} alt="Profile_Pic" class="profile_pic">
-    </div>
-    <div class="project_image" name="mde_image">
-      <img id="img" src={{ url_for('static', filename = 'media/mde_3.png') }} alt="Profile_Pic" class="profile_pic">
-    </div>
-    <div class="project_image" name="mde_image">
-      <img id="img" src={{ url_for('static', filename = 'media/mde_4.png') }} alt="Profile_Pic" class="profile_pic">
-    </div>
-
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1, 'mde')">&#10094;</a>
-    <a class="next" onclick="plusSlides(1, 'mde')">&#10095;</a>
-
-    <div style="text-align:center; margin-top: 5px;">
-      <span name="mde_dot" class="dot" onclick="currentSlide(0, 'mde')"></span>
-      <span name="mde_dot" class="dot" onclick="currentSlide(1, 'mde')"></span>
-      <span name="mde_dot" class="dot" onclick="currentSlide(2, 'mde')"></span>
-      <span name="mde_dot" class="dot" onclick="currentSlide(3, 'mde')"></span>
-    </div>
+  <div class="project_image" name="mde_image">
+    <img id="img" src={{ url_for('static', filename = 'media/mde_1.png') }} alt="Profile_Pic" class="profile_pic">
+  </div>
+  <div class="project_image" name="mde_image">
+    <img id="img" src={{ url_for('static', filename = 'media/mde_2.png') }} alt="Profile_Pic" class="profile_pic">
+  </div>
+  <div class="project_image" name="mde_image">
+    <img id="img" src={{ url_for('static', filename = 'media/mde_3.png') }} alt="Profile_Pic" class="profile_pic">
+  </div>
+  <div class="project_image" name="mde_image">
+    <img id="img" src={{ url_for('static', filename = 'media/mde_4.png') }} alt="Profile_Pic" class="profile_pic">
   </div>
 
-  <div class="project_description project_description_style">
-    <strong>Description</strong>
-    <ul>
-      <li>Find fabric via image or search parameters</li>
-      <li>Interface with the server to send parameters and receive results</li>
-      <li>Load results asynchronously</li>
-      <li>Identify network issues and resolve them</li>
-    </ul>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1, 'mde')">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 'mde')">&#10095;</a>
+
+  <div style="text-align:center; margin-top: 5px;">
+    <span name="mde_dot" class="dot" onclick="currentSlide(0, 'mde')"></span>
+    <span name="mde_dot" class="dot" onclick="currentSlide(1, 'mde')"></span>
+    <span name="mde_dot" class="dot" onclick="currentSlide(2, 'mde')"></span>
+    <span name="mde_dot" class="dot" onclick="currentSlide(3, 'mde')"></span>
   </div>
-  <div class="project_description project_description_style">
-    <strong>Tech Utilized</strong>
-    <ul>
-      <li>Fabric Finding Android App (Capstone Project)</li>
-      <li>Django Digital Ocean Server</li>
-      <li>PostgreSQL</li>
-      <li>image-match package</li>
-      <li>Android Volley</li>
-    </ul>
-  </div>
+</div>
 </div>
 
 <div class="project_container">
@@ -153,28 +251,13 @@
     <div class="project_title">
       <h5> Budgeting App (Android)</h5>
     </div>
-    <div class="project_git">
-      github
-    </div>
+
     <div class="project_code">
       <span class="badge badge-success project_badge">Java</span>
     </div>
   </div>
 
-  <div class="project_photo">
 
-    <div class="project_image">
-      <img id="img" src={{ url_for('static', filename = 'media/mde_1.png') }} alt="Profile_Pic" class="profile_pic">
-    </div>
-
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1, 'budget')">&#10094;</a>
-    <a class="next" onclick="plusSlides(1, 'budget')">&#10095;</a>
-
-    <div style="text-align:center; margin-top: 5px;">
-      <span class="dot" onclick="currentSlide(1, 'budget')"></span>
-    </div>
-  </div>
 
   <div class="project_description project_description_style">
     <strong>Description</strong>
@@ -193,16 +276,15 @@
       <li>Android Volley</li>
     </ul>
   </div>
+
 </div>
 
-<div class="project_container">
+<div class="project_container" style="margin-bottom: 30px;">
   <div class="project_head">
     <div class="project_title">
       <h5>Search Engine</h5>
     </div>
-    <div class="project_git">
-      github
-    </div>
+
 
     <div class="project_code">
       <span class="badge badge-success project_badge">Java</span>
@@ -211,19 +293,7 @@
     </div>
   </div>
 
-  <div class="project_photo">
-    <div class="search_image">
-      <img id="img" src={{ url_for('static', filename = 'media/mde_1.png') }} alt="Profile_Pic" class="profile_pic">
-    </div>
 
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1, 'mde')">&#10094;</a>
-    <a class="next" onclick="plusSlides(1, 'mde')">&#10095;</a>
-
-    <div style="text-align:center; margin-top: 5px;">
-      <span class="dot" onclick="currentSlide(1, 'mde')"></span>
-    </div>
-  </div>
 
   <div class="project_description project_description_style">
     <strong>Description</strong>
@@ -245,6 +315,7 @@
 </div>
 
 <script>
+ showSlides(0, 'thrive');
  showSlides(0, 'mde');
  showSlides(0, 'insta');
  showSlides(0, 'budget');
