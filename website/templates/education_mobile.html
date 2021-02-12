@@ -603,8 +603,12 @@
       }
     }
 
+    for (i = 0; i < classButtons.length; i++) {
+      if(classInfo[i].style.display == 'none') {
+        $(classButtons[i]).removeClass("active");
+      }
+    }
     $(collapse_content_selector).slideToggle("slow");
-
   });
 });
 
