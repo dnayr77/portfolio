@@ -14,7 +14,7 @@ setup(
     install_requires=[
         'arrow==0.15.1',
         'bs4==0.0.1',
-        'Flask==1.1.1',
+        'Flask==2.3.2',
         'Flask-Mail==0.9.1',
         'Flask-WTF==0.14.3',
         'html5validator==0.3.1',
